@@ -26,5 +26,11 @@ $("#1").click(function (e) {
   $("#1").removeClass("mouseover");
   $("#1place").addClass("focus");
   $("#1place").removeClass("mouseover");
-  $("#1").css("pointer-events", "none");
 });
+
+var myElement = document.getElementById('1');if ($("#1").is(":focus")) {
+  //I have the focus
+}
+if(myElement === document.activeElement){
+  $("#1").css("pointer-events", "none");
+}
